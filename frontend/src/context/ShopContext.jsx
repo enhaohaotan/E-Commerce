@@ -13,9 +13,13 @@ const ShopContextProvider = (props) => {
     delivery_fee,
   };
   return (
-    <ShopContext.Provider value={value}>{props.children}</ShopContext.Provider>
+    <ShopContext.Provider value={value}>
+      {props.children}
+
+
+
+          </ShopContext.Provider>
   );
 };
 
 export default ShopContextProvider;
- 

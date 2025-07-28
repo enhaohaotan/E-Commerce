@@ -1,0 +1,15 @@
+{
+  // 下面的值根据你安装的扩展改一下，比如 esbenp.prettier-vscode
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+
+  // 可选：保存时自动格式化
+  "editor.formatOnSave": true,
+
+  // 为 JS/TS React 文件单独指定
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
+}
