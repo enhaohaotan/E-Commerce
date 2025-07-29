@@ -6,7 +6,7 @@
   "files.autoSave": "onFocusChange",
     // ESLint 插件配置
   "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
-
+  "css.lint.unknownAtRules": "ignore",
   // 在 VS Code 状态栏显示 ESLint 状态
   "eslint.alwaysShowStatus": true
 }
