@@ -1,15 +1,12 @@
 {
-  // 下面的值根据你安装的扩展改一下，比如 esbenp.prettier-vscode
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-
-  // 可选：保存时自动格式化
-  "editor.formatOnSave": true,
-
-  // 为 JS/TS React 文件单独指定
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  }
+  "files.autoSave": "onFocusChange",
+    // ESLint 插件配置
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // 在 VS Code 状态栏显示 ESLint 状态
+  "eslint.alwaysShowStatus": true
 }
