@@ -47,7 +47,7 @@ const Footer = () => {
       <div>
         <hr />
         <p className="py-5 text-center text-sm">
-          Copyright © 2024 forever.com - All rights reserved.
+          Copyright © 2025 forever.com - All rights reserved.
         </p>
       </div>
     </div>
