@@ -7,8 +7,7 @@ import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
-  const { showSearch, setShowSearch, getCartCount, navigate } =
-    useContext(ShopContext);
+  const { showSearch, setShowSearch, getCartCount } = useContext(ShopContext);
   const location = useLocation();
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -41,25 +40,29 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center gap-6">
-        <img
-          onClick={() => {
-            if (location.pathname.includes("collection")) {
-              setShowSearch(!showSearch);
-            } else {
-              navigate("/collection");
-              setShowSearch(true);
-            }
-          }}
-          src={assets.search_icon}
-          className="w-5 cursor-pointer"
-          alt=""
-        />
-        <div className="group relative">
+        <Link to={"/collection"}>
           <img
-            src={assets.profile_icon}
+            onClick={() => {
+              if (location.pathname.includes("collection")) {
+                setShowSearch(!showSearch);
+              } else {
+                // navigate("/collection");
+                setShowSearch(true);
+              }
+            }}
+            src={assets.search_icon}
             className="w-5 cursor-pointer"
             alt=""
           />
+        </Link>
+        <div className="group relative">
+          <Link to={"/login"}>
+            <img
+              src={assets.profile_icon}
+              className="w-5 cursor-pointer"
+              alt=""
+            />
+          </Link>
           <div
             className={`
               absolute right-0 hidden pt-4
@@ -80,14 +83,17 @@ const Navbar = () => {
               >
                 My Profile
               </p>
-              <p
-                className={`
-                  cursor-pointer
-                  hover:text-black
-                `}
-              >
-                Orders
-              </p>
+              <Link to={"/orders"}>
+                <p
+                  className={`
+                    cursor-pointer
+                    hover:text-black
+                  `}
+                >
+                  Orders
+                </p>
+              </Link>
+
               <p
                 className={`
                   cursor-pointer
