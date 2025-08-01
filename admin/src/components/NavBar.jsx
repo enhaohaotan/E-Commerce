@@ -7,10 +7,7 @@ const NavBar = ({ setToken }) => {
       <img src={assets.logo} className="w-[max(10%,80px)]" alt="" />
       <button
         onClick={() => setToken("")}
-        className={`
-          rounded-full bg-gray-600 px-5 py-2 text-xs text-white
-          sm:px-7 sm:text-sm
-        `}
+        className={`my-8 bg-black px-8 py-3 text-sm text-white`}
       >
         Logout
       </button>

@@ -56,6 +56,18 @@ const Navbar = () => {
       </ul>
 
       <div className="flex items-center gap-6">
+        <button
+          className="my-8 bg-black px-8 py-3 text-sm text-white"
+          onClick={() =>
+            window.open(
+              import.meta.env.VITE_ADMIN_PANEL_URL,
+              "_blank",
+              "noopener",
+            )
+          }
+        >
+          Admin Panel
+        </button>
         <Link to={"/collection"}>
           <img
             onClick={() => {

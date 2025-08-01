@@ -2,10 +2,16 @@ import React, { useState } from "react";
 import axios from "axios";
 import { backendUrl } from "../App";
 import { toast } from "react-toastify";
+import { useEffect } from "react";
 
 const Login = ({ setToken }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(() => {
+    setEmail("admin@forever.com");
+    setPassword("qwerty123");
+  }, []);
 
   const onSubmitHandler = async (e) => {
     try {
