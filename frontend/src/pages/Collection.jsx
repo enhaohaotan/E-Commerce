@@ -108,33 +108,42 @@ const Collection = () => {
         >
           <p className="mb-3 text-sm font-medium">CATEGORIES</p>
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Men"}
-                onChange={toggleCategory}
-              />{" "}
-              Men
-            </p>
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Women"}
-                onChange={toggleCategory}
-              />{" "}
-              Women
-            </p>
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Kids"}
-                onChange={toggleCategory}
-              />{" "}
-              Kids
-            </p>
+            <label htmlFor="men">
+              <p className="flex gap-2">
+                <input
+                  id="men"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Men"}
+                  onChange={toggleCategory}
+                />{" "}
+                Men
+              </p>
+            </label>
+            <label htmlFor="women">
+              <p className="flex gap-2">
+                <input
+                  id="women"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Women"}
+                  onChange={toggleCategory}
+                />{" "}
+                Women
+              </p>
+            </label>
+            <label htmlFor="kids">
+              <p className="flex gap-2">
+                <input
+                  id="kids"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Kids"}
+                  onChange={toggleCategory}
+                />{" "}
+                Kids
+              </p>
+            </label>
           </div>
         </div>
         {/* SubCategory Filter */}
@@ -147,33 +156,42 @@ const Collection = () => {
         >
           <p className="mb-3 text-sm font-medium">TYPE</p>
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Topwear"}
-                onChange={toggleSubCategory}
-              />{" "}
-              Topwear
-            </p>
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Bottomwear"}
-                onChange={toggleSubCategory}
-              />{" "}
-              Bottomwear
-            </p>
-            <p className="flex gap-2">
-              <input
-                type="checkbox"
-                className="w-3"
-                value={"Winterwear"}
-                onChange={toggleSubCategory}
-              />{" "}
-              Winterwear
-            </p>
+            <label htmlFor="topwear">
+              <p className="flex gap-2">
+                <input
+                  id="topwear"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Topwear"}
+                  onChange={toggleSubCategory}
+                />{" "}
+                Topwear
+              </p>
+            </label>
+            <label htmlFor="bottomwear">
+              <p className="flex gap-2">
+                <input
+                  id="bottomwear"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Bottomwear"}
+                  onChange={toggleSubCategory}
+                />{" "}
+                Bottomwear
+              </p>
+            </label>
+            <label htmlFor="winterwear">
+              <p className="flex gap-2">
+                <input
+                  id="winterwear"
+                  type="checkbox"
+                  className="w-3"
+                  value={"Winterwear"}
+                  onChange={toggleSubCategory}
+                />{" "}
+                Winterwear
+              </p>
+            </label>
           </div>
         </div>
       </div>
